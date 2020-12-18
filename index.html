@@ -1,0 +1,90 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE Html>
+<html>
+
+<head>
+    <title id="form"> A Survey Form </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title"> Survey Form</h1>
+
+    </header>
+
+    <main>
+
+
+        <form id="survey-form" required>
+            <p id="description"> <b>Please take a few moments to complete this survey</b> </p>
+
+            <div class="form">
+                <label for="name" id="name-label"> Full Name:</label>
+                <input type="text" id="name" placeholder="Please enter your name" name="name" size="50" required>
+                <br> <br>
+                <label for="email" id="email-label"> Email:</label>
+                <input type="email" id="email" placeholder="Please enter your email" name="email" size="50" required>
+                <br> <br>
+                <label for="number" id="number-label">Phone Number:</label>
+                <input type="number" id="number" for="phone" placeholder="Enter 10 digits number" name="number" min="1"
+                    max="9" required> <br>
+                <br>
+                <br>
+                <label for="dropdown">Gender:</label>
+
+                <select id="dropdown">
+                    <option disabled selected value>Select gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to identify">Prefer not to identify</option>
+                </select>
+            </div>
+
+            <br>
+            <p id="radio">Please select your age:</p>
+            <input type="radio" id="age1" name="age" value="0-17">
+            <label for="0-17">0 - 17</label><br>
+            <input type="radio" id="age2" name="age" value="18-24">
+            <label for="18 - 24">18 - 24</label><br>
+            <input type="radio" id="age3" name="age" value="25 - 35">
+            <label for="25 - 35">25 - 35</label><br>
+            <input type="radio" id="age4" name="age" value="35 - 44">
+            <label for="35 - 44">35 - 44</label><br>
+            <input type="radio" id="age5" name="age" value="45 - 54">
+            <label for="45 - 54">45 - 54</label> <br>
+            <input type="radio" id="age6" name="age" value="55 - 65">
+            <label for="55 - 65">55 - 65</label><br>
+            <input type="radio" id="age7" name="age" value="65 or more">
+            <label for="65 or more">65 or more</label>
+
+            <p id="check">What certificate do you have? <span>(Check all that apply)</span></p>
+            <input type="checkbox" id="c1" value="High school certificate" checked>
+            <label for="High school certificate">High school certificate</label>
+            <br>
+            <input type="checkbox" id="c2" value="Bachelors degree">
+            <label for="Bachelors degree">Bachelors degree</label>
+            <br>
+            <input type="checkbox" id="c3" value="Masters degree">
+            <label for="Masters degree">Masters degree</label>
+            <br>
+            <input type="checkbox" id="c4" value="Doctor of Philosophy (PHD)">
+            <label for="Doctor of Philosophy (PHD)">Doctor of Philosophy (PHD)</label>
+            <br>
+            <br>
+            <label for="comments"> Do you have additional comments? </label> <br>
+            <br>
+            <textarea id="text-area" name="comments" rows="4" cols="50" placeholder="Enter your comments..."></textarea>
+            <br>
+            <br>
+            <button type="submit" id="submit">Submit</button>
+
+        </form>
+    </main>
+</body>
+
+</html>
